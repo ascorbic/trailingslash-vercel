@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/vercel':
-        specifier: ^8.0.0
-        version: 8.0.0(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)
+        specifier: ^7.8.1
+        version: 7.8.1(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)
       astro:
         specifier: ^5.0.3
         version: 5.0.3(rollup@4.28.1)(typescript@5.7.2)
@@ -34,10 +34,10 @@ packages:
     resolution: {integrity: sha512-wxhSKRfKugLwLlr4OFfcqovk+LIFtKwLyGPqMsv+9/ibqqnW3Gv7tBhtKEb0gAyUAC4G9BTVQeQahqnQAhd6IQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/vercel@8.0.0':
-    resolution: {integrity: sha512-JEVt/J9NJ0unMCLh2fCOvr9M6Mugph3SoNSzaRLR88hA6ckakHabSAMyd8fTFy4pogPH/puyQkiKak7nsHyM6g==}
+  '@astrojs/vercel@7.8.1':
+    resolution: {integrity: sha512-2PIVmv2/nI527DQsaZnf2jeUr+ddJjaQLXwqnVPXQn0LfIE8mi8BgYC5SUU9hJWIaFwEWTwJh90POaA2L3RpWQ==}
     peerDependencies:
-      astro: ^5.0.0
+      astro: ^4.2.0
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
@@ -1659,6 +1659,9 @@ packages:
   web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
 
+  web-vitals@3.5.2:
+    resolution: {integrity: sha512-c0rhqNcHXRkY/ogGDJQxZ9Im9D19hDihbzSQJrsioex+KnFgmMzBiy57Z1EjkhX/+OjyBpclDCzz2ITtjokFmg==}
+
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
@@ -1772,15 +1775,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/vercel@8.0.0(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)':
+  '@astrojs/vercel@7.8.1(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)':
     dependencies:
       '@astrojs/internal-helpers': 0.4.2
       '@vercel/analytics': 1.4.1
       '@vercel/edge': 1.1.3
       '@vercel/nft': 0.27.7(rollup@4.28.1)
       astro: 5.0.3(rollup@4.28.1)(typescript@5.7.2)
-      esbuild: 0.24.0
+      esbuild: 0.21.5
       fast-glob: 3.3.2
+      web-vitals: 3.5.2
     transitivePeerDependencies:
       - '@remix-run/react'
       - '@sveltejs/kit'
@@ -3562,6 +3566,8 @@ snapshots:
       vite: 6.0.3
 
   web-namespaces@2.0.1: {}
+
+  web-vitals@3.5.2: {}
 
   webidl-conversions@3.0.1: {}
 
