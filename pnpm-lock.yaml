@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/vercel':
-        specifier: 0.0.0-vercel-routing-20250129140158
-        version: 0.0.0-vercel-routing-20250129140158(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)
+        specifier: 8.0.7
+        version: 8.0.7(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)
       astro:
         specifier: ^5.0.3
         version: 5.0.3(rollup@4.28.1)(typescript@5.7.2)
@@ -23,6 +23,9 @@ packages:
   '@astrojs/internal-helpers@0.4.2':
     resolution: {integrity: sha512-EdDWkC3JJVcpGpqJAU/5hSk2LKXyG3mNGkzGoAuyK+xoPHbaVdSuIWoN1QTnmK3N/gGfaaAfM8gO2KDCAW7S3w==}
 
+  '@astrojs/internal-helpers@0.5.1':
+    resolution: {integrity: sha512-M7rAge1n2+aOSxNvKUFa0u/KFn0W+sZy7EW91KOSERotm2Ti8qs+1K0xx3zbOxtAVrmJb5/J98eohVvvEqtNkw==}
+
   '@astrojs/markdown-remark@6.0.0':
     resolution: {integrity: sha512-Tabo7xM44Pz2Yf9qpdaCCgxRmtaypi2YCinqTUNefDrWUa+OyKW62OuNeCaGwNh/ys+QAd9FUWN5/3HgPWjP4Q==}
 
@@ -34,8 +37,8 @@ packages:
     resolution: {integrity: sha512-wxhSKRfKugLwLlr4OFfcqovk+LIFtKwLyGPqMsv+9/ibqqnW3Gv7tBhtKEb0gAyUAC4G9BTVQeQahqnQAhd6IQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/vercel@0.0.0-vercel-routing-20250129140158':
-    resolution: {integrity: sha512-jhCv//9TYbXawYx2cC+aSw+QeLBQ7QCTg2WhlTiESwpatAMSx7X6Bg+95jm+aWG7PEJFOe40W8+yHb8KBwHxSQ==}
+  '@astrojs/vercel@8.0.7':
+    resolution: {integrity: sha512-2DPqPGZ/Et4afpJt8CAoIql2S649rzEmLBNJPHUGBysP0JklMaZ05HhQVKr+qEhZSm3NrVccxpkiIG/eLW3nPg==}
     peerDependencies:
       astro: ^5.0.0
 
@@ -661,8 +664,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@vercel/routing-utils@5.0.0':
-    resolution: {integrity: sha512-llvozDbkGDSelbgigAt9IwCQS8boP4rNHfy3rpJf0DqSn6UDlkFX270NwIQruyXN9KHktHC9qOof6Ik2+bT88A==}
+  '@vercel/routing-utils@5.0.4':
+    resolution: {integrity: sha512-4ke67zkXVi2fRZdoYckABcsSkRC9CnrdadOGxoS/Bk22+ObHjGQWvUHExRSXh339anwu9YY7ZacNSGH4gUnTQA==}
 
   abbrev@3.0.0:
     resolution: {integrity: sha512-+/kfrslGQ7TNV2ecmQwMJj/B65g5KVq1/L3SGVZ3tCYGqlzFuFCGBZJtMP99wH3NpEUyAjn0zPdPUg0D+DwrOA==}
@@ -1382,6 +1385,9 @@ packages:
   path-to-regexp@6.1.0:
     resolution: {integrity: sha512-h9DqehX3zZZDCEm+xbfU0ZmwCGFCAAraPJWMXJ4+v32NjZJilVg3k1TcKsRgIb8IQ/izZSaydDc1OhJCZvs2Dw==}
 
+  path-to-regexp@6.3.0:
+    resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -1785,6 +1791,8 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.2': {}
 
+  '@astrojs/internal-helpers@0.5.1': {}
+
   '@astrojs/markdown-remark@6.0.0':
     dependencies:
       '@astrojs/prism': 3.2.0
@@ -1825,13 +1833,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/vercel@0.0.0-vercel-routing-20250129140158(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)':
+  '@astrojs/vercel@8.0.7(astro@5.0.3(rollup@4.28.1)(typescript@5.7.2))(rollup@4.28.1)':
     dependencies:
-      '@astrojs/internal-helpers': 0.4.2
+      '@astrojs/internal-helpers': 0.5.1
       '@vercel/analytics': 1.4.1
       '@vercel/edge': 1.2.1
       '@vercel/nft': 0.29.1(rollup@4.28.1)
-      '@vercel/routing-utils': 5.0.0
+      '@vercel/routing-utils': 5.0.4
       astro: 5.0.3(rollup@4.28.1)(typescript@5.7.2)
       esbuild: 0.24.0
       fast-glob: 3.3.3
@@ -2267,9 +2275,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/routing-utils@5.0.0':
+  '@vercel/routing-utils@5.0.4':
     dependencies:
       path-to-regexp: 6.1.0
+      path-to-regexp-updated: path-to-regexp@6.3.0
     optionalDependencies:
       ajv: 6.12.6
 
@@ -3280,6 +3289,8 @@ snapshots:
       minipass: 7.1.2
 
   path-to-regexp@6.1.0: {}
+
+  path-to-regexp@6.3.0: {}
 
   picocolors@1.1.1: {}
 
